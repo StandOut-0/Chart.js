@@ -11,6 +11,12 @@ new Chart(ctx, {
         datasets: [{
             label: '막대그래프 bar',
             data: [12, 19, 3, 5, 2, 3],
+            
+            //border
+            borderColor: '#1e0dad',
+            borderWidth: 2,
+            //background
+            backgroundColor: '#a59bf5'
         }]
     },
     options: {
