@@ -16,12 +16,18 @@ new Chart(ctx, {
             //border
             borderColor: '#1e0dad',
             borderWidth: 2,
+
             //background
             backgroundColor: '#a59bf5'
         }]
     },
     options: {
         scales: { y: { beginAtZero: true } },
+        //layout setting
+        layout: {
+            padding: 10
+            // padding: {left:50}
+        },
         plugins: {
             //legend font setting
             legend: { labels: { font: { 
