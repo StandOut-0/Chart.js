@@ -83,7 +83,14 @@ new Chart(chart_doughnut, {
             data: [10, 3, 30],
             backgroundColor: ['#a59bf0', '#c7c0f5', '#998bf7'],
         }]
-    }
+    },
+    options: {
+        plugins: {
+          title: {
+            display: true,
+            text: '도넛그래프 doughnut'
+          }
+        }}
 });
 
 // 레이더그래프 radar
@@ -97,8 +104,7 @@ new Chart(chart_radar, {
             data: [10, 10, 10, 10, 10],
             backgroundColor: '#a59bf090'
         }]
-    },
-    
+    }
 });
 
 // const sample = document.getElementById('sample');
