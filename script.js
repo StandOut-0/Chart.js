@@ -56,7 +56,8 @@ new Chart(chart_line, {
             label: '라인그래프 line',
             data: [10, 3, 30, 23, 10, 5, 50],
             backgroundColor: ['#a59bf0', '#c7c0f5', '#998bf7'],
-            borderColor: '#1e0dad'
+            borderColor: '#1e0dad',
+            fill: false, //origin, start, end
         }]
     },
     options: {
