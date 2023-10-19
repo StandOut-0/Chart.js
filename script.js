@@ -107,5 +107,19 @@ new Chart(chart_radar, {
     }
 });
 
+
+// 분산그래프 scatter
+const chart_scatter = document.getElementById('chart_scatter');
+new Chart(chart_scatter, {
+    type: 'scatter',
+    data: {
+        datasets: [{
+            label: '분산그래프 scatter',
+            data: [{x: -10,y: 0}, {x: 0,y: 10}, {x: 10,y: 5}],
+            backgroundColor: '#998bf7'
+        }]
+    },
+});
+
 // const sample = document.getElementById('sample');
 // new Chart(sample, {});
