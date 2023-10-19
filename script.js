@@ -54,7 +54,9 @@ new Chart(chart_line, {
         labels: ['1', '2', '3', '4', '5', '6', '7'],
         datasets: [{
             label: '라인그래프 line',
-            data: [10, 3, 30, 23, 10, 5, 50]
+            data: [10, 3, 30, 23, 10, 5, 50],
+            backgroundColor: ['#a59bf0', '#c7c0f5', '#998bf7'],
+            borderColor: '#1e0dad'
         }]
     },
     options: {
@@ -69,3 +71,21 @@ new Chart(chart_line, {
         }
     }
 });
+
+// 도넛그래프 doughnut
+const chart_doughnut = document.getElementById('chart_doughnut');
+new Chart(chart_doughnut, {
+    type: 'doughnut',
+    data: {
+        labels: ['파트1', '파트2', '파트3'],
+        datasets: [{
+            data: [10, 3, 30],
+            backgroundColor: ['#a59bf0', '#c7c0f5', '#998bf7'],
+        }]
+    }
+});
+
+
+
+// const sample = document.getElementById('sample');
+// new Chart(sample, {});
