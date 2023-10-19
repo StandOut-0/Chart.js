@@ -86,7 +86,20 @@ new Chart(chart_doughnut, {
     }
 });
 
-
+// 레이더그래프 radar
+const chart_radar = document.getElementById('chart_radar');
+new Chart(chart_radar, {
+    type: 'radar',
+    data: {
+        labels: ['파트1', '파트2', '파트3', '파트4', '파트5'],
+        datasets: [{
+            label: "레이더그래프 radar",
+            data: [10, 10, 10, 10, 10],
+            backgroundColor: '#a59bf090'
+        }]
+    },
+    
+});
 
 // const sample = document.getElementById('sample');
 // new Chart(sample, {});
