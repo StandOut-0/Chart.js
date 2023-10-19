@@ -18,13 +18,13 @@ new Chart(chart_bar, {
             borderWidth: 2,
 
             //background
-            backgroundColor: ['#a59bf0', '#c7c0f5','#998bf7', '#7b6fd5']
+            backgroundColor: ['#a59bf0', '#c7c0f5', '#998bf7', '#7b6fd5']
         }]
     },
     options: {
         //animation
         animation: true,
-        
+
         scales: { y: { beginAtZero: true } },
         //layout setting
         layout: {
@@ -33,15 +33,18 @@ new Chart(chart_bar, {
         },
         plugins: {
             //legend font setting
-            legend: { labels: { font: { 
-                family: 'Arial', //Helvetica Neue, Helvetica, Arial, sans-serif
-                style: 'italic', //normal, italic, oblique, initial, inherit
-                size: 9
-             } } }
+            legend: {
+                labels: {
+                    font: {
+                        family: 'Arial', //Helvetica Neue, Helvetica, Arial, sans-serif
+                        style: 'italic', //normal, italic, oblique, initial, inherit
+                        size: 9
+                    }
+                }
+            }
         }
     }
 });
-
 
 // 라인그래프 line
 const chart_line = document.getElementById('chart_line');
@@ -51,7 +54,18 @@ new Chart(chart_line, {
         labels: ['1', '2', '3', '4', '5', '6', '7'],
         datasets: [{
             label: '라인그래프 line',
-            data: [10,3,30,23,10,5,50]
+            data: [10, 3, 30, 23, 10, 5, 50]
         }]
+    },
+    options: {
+        //animations 세부설정
+        animations: {
+            tension: {
+                duration: 3000,
+                easing: 'linear', //www.chartjs.org/docs/latest/configuration/animations.html#easing
+                from: 5, to: 0,
+                loop: false
+            }
+        }
     }
 });
