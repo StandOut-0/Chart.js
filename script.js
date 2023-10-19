@@ -12,7 +12,7 @@ new Chart(ctx, {
         datasets: [{
             label: '막대그래프 bar',
             data: [12, 19, 3, 5, 2, 3],
-            
+
             //border
             borderColor: '#1e0dad',
             borderWidth: 2,
@@ -21,11 +21,15 @@ new Chart(ctx, {
         }]
     },
     options: {
-        scales: {y: {beginAtZero: true}},
-        parsing: {
-            xAxisKey: 'Hi',
-            yAxisKey: 'Hello'
-          }
+        scales: { y: { beginAtZero: true } },
+        plugins: {
+            //legend font setting
+            legend: { labels: { font: { 
+                family: "Arial", //Helvetica Neue, Helvetica, Arial, sans-serif
+                style: "italic", //normal, italic, oblique, initial, inherit
+                size: 9
+             } } }
+        }
     }
 });
 
