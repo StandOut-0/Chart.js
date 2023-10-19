@@ -22,6 +22,9 @@ new Chart(ctx, {
         }]
     },
     options: {
+        //animation
+        animation: true,
+
         scales: { y: { beginAtZero: true } },
         //layout setting
         layout: {
