@@ -93,6 +93,26 @@ new Chart(chart_doughnut, {
         }}
 });
 
+// 파이그래프 pie
+const chart_pie = document.getElementById('chart_pie');
+new Chart(chart_pie, {
+    type: 'pie',
+    data: {
+        labels: ['파트1', '파트2', '파트3'],
+        datasets: [{
+            data: [10, 3, 30],
+            backgroundColor: ['#a59bf0', '#c7c0f5', '#998bf7'],
+        }]
+    },
+    options: {
+        plugins: {
+          title: {
+            display: true,
+            text: '파이그래프 pie'
+          }
+        }}
+});
+
 // 레이더그래프 radar
 const chart_radar = document.getElementById('chart_radar');
 new Chart(chart_radar, {
@@ -118,7 +138,7 @@ new Chart(chart_scatter, {
             data: [{x: -10,y: 0}, {x: 0,y: 10}, {x: 10,y: 5}],
             backgroundColor: '#998bf7'
         }]
-    },
+    }
 });
 
 // const sample = document.getElementById('sample');
